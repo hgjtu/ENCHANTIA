@@ -1,0 +1,314 @@
+main{
+    margin-top: 10px;
+    padding: 1%;
+    background-color: var(--main-backgrount-color);
+    border-radius: 5px;
+}
+
+/*-----------------------------------------------*/
+.lombard-calculator-wrapper {
+    flex-direction: column;
+    align-items: center;
+    display: flex;
+    border-radius: 10px;
+    box-shadow: 0 6px 50px 0 rgba(0,0,0,.122);
+    padding: 32px 16px;
+    background-color: rgba(72, 72, 72, 0.24);
+}
+
+.lombard-title {
+    font-family: 'Comfortaa', cursive;
+    width: 100%;
+    font-size: 23px;
+    line-height: 38px;
+    margin-top: 56px;
+}
+
+.lombard-calculator-title {
+    text-align: left;
+    font-size: 20px;
+    line-height: 20px;
+    font-family: 'Comfortaa', cursive;
+    margin-top: 0!important;
+}
+
+.lombard-calculator {
+    width: 100%;
+    display: flex;
+    gap: 20px;
+    flex-direction: column;
+}
+
+.lombard-calculator__block {
+    flex: 1 1;
+    font-size: 18px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    justify-content: flex-start;
+}
+
+.lombard-calculator__fineness {
+    display: flex;
+    flex-direction: column;
+}
+
+.lombard-calculator__fineness-title {
+    font-size: 17px;
+    margin-top: 10px;
+    margin-bottom: 12px;
+    font-family: 'Comfortaa', cursive;
+}
+
+.lombard-calculator__fineness-value-item {
+    border-radius: 100px;
+    border: 1px solid #e4e4e4;
+    padding: 6px 12px;
+    font-size: 16px;
+    font-family: 'Comfortaa', cursive;
+    font-weight: 450;
+    cursor: pointer;
+}
+
+.lombard-calculator__fineness-value-item_active {
+    background: #005a2b;
+    color: #fff;
+    border-color: #005a2b;
+}
+
+#lombard-calculator__fineness-value {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 12px;
+    margin: 0 16px;
+    padding: 0 16px;
+}
+
+.lombard-calculator__fields {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.lombard-calculator__weight {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.lombard-calculator__weight-title {
+    font-size: 17px;
+    margin-bottom: 12px;
+    font-family: 'Comfortaa', cursive;
+}
+
+.lombard-calculator__input {
+    position: relative;
+    border-radius: 10px;
+    width: 100%;
+}
+
+#lombard-calculator__input-box {
+    font-size: 18px;
+    border-radius: 10px;
+    border: 1px solid #000;
+    padding: 14px;
+    width: 100%;
+    font-family: 'Comfortaa', cursive;
+    font-weight: 500;
+}
+
+input, select, textarea {
+    background: 0 0;
+    border: 0;
+    font-family: 'Comfortaa', cursive;
+    font-weight: 400;
+    outline: 0;
+    vertical-align: middle;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+input[type="number"]::-webkit-outer-spin-button,
+input[type="number"]::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+.lombard-calculator__result {
+    flex: 1 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 20px;
+}
+
+.lombard-calculator__result-summ {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    align-items: left;
+    width: 100%;
+}
+
+.lombard-calculator__result-summ-title {
+    font-size: 17px;
+    line-height: 22px;
+    text-align: left;
+    font-family: 'Comfortaa', cursive;
+}
+
+#lombard-calculator__integer-summ {
+    font-size: 32px;
+    font-family: 'Comfortaa', cursive;
+    line-height: 38px;
+    letter-spacing: .4px;
+}
+
+.lombard-calculator__result-more {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 12px;
+    align-self: stretch;
+}
+
+.lombard-calculator__result-more-button_yellow {
+    background: #ffe535;
+    color: #000;
+    transition: background-color 300ms ease-out;
+}
+
+.lombard-calculator__result-more-button {
+    font-family: 'Comfortaa', cursive;
+    font-weight: 500;
+    display: flex;
+    padding: 19px 36px;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    width: 100%;
+    font-size: 22px;
+    line-height: 26px;
+    text-decoration: none;
+}
+
+.lombard-calculator__result-more-caption {
+    font-size: 14px;
+    line-height: 18px;
+    color: #b1b1b1;
+    text-align: left;
+}
+
+/*-----------------------------------------------*/
+
+.lombard-services {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(3, 200px);
+    gap: 10px;
+    text-align: center;
+    justify-items: center;
+    justify-content: center;
+}
+
+.lombard-service {
+    background: #262626;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    justify-content: space-between;
+    position: relative;
+    gap: 10px;
+    width: 90%;
+}
+
+.lombard-service_title {
+    font-family: 'Comfortaa', cursive;
+    font-size: 20px;
+    color: white;
+}
+
+.lombard-service_price {
+    display: flex;
+    justify-content: center;
+    gap: 5px;
+}
+
+.lombard-service_price span {
+    font-family: 'Comfortaa', cursive;
+    border-radius: 10px;
+    background: #619983;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 17px;
+    width: 50px;
+    height: 30px;
+    padding: 0.5%;
+}
+/*------------------------------------------------*/
+.change__list {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    font-family: 'Comfortaa', cursive;
+    font-size: 14px;
+}
+
+.subtitle{
+    font-size: 18px;
+    font-weight: 600;
+}
+
+.change__item {
+    max-width: 330px;
+    margin: 8px 8px 16px;
+    text-align: center;
+}
+
+.change__item img{
+    width: 23%;
+}
+
+@media screen and (max-width: 668px) {
+    .logo{
+        display: inline;
+    }
+
+    main{
+        margin-top: 60px;
+    }
+
+    .lombard-calculator-title{
+        font-size: 18px;
+    }
+
+    .lombard-calculator__fineness-title,
+    .lombard-calculator__weight-title,
+    .lombard-calculator__result-summ-title {
+        font-size: 15px;
+    }
+
+    #lombard-calculator__integer-summ {
+        font-size: 30px;
+    }
+
+    .lombard-services {
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(3, 1fr);
+    }
+
+    .lombard-service {
+        width: 50%;
+    }
+}

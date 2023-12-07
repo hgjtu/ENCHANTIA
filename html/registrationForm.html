@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Какой-то сайт</title>
+    <link rel="icon" type="image/png" href="../Icons/favicon.png"> <!--Иконка-->
+    <link rel="stylesheet" href="../css/general.css">
+    <link rel="stylesheet" href="../css/registrationForm_style.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@300&family=Jura:wght@300&display=swap" rel="stylesheet">
+</head>
+<body style="background-color: #c0c0c0;">
+  <header class="logo">
+      <div class="back_button" onclick="open_home_window()"><img src="">На главную страницу</div>
+      <img src="../logo.png" alt="Логотип" class="logo_img">
+      <div>
+          <div class="liked">
+              <img src="../Icons/heart.png" onclick="open_liked_window()">
+          </div>
+          <div class="cart">
+              <img src="../Icons/shopping_cart.png" onclick="open_cart_window()">
+          </div>
+          <div class="account">
+              <img src="../Icons/account.png">
+          </div>
+      </div>
+  </header>
+
+  <main>
+    <section>
+      <div class="container">
+        <div class="form sign-in-form">
+          <div class="wrapper">
+            <form action="#">
+              <h1>Sign In</h1>
+              <input type="email" placeholder="Email">
+              <input type="password" placeholder="password">
+              <button>Sign In</button>
+            </form>
+          </div>
+        </div>
+
+        <div class="form sign-up-form active">
+          <div class="wrapper">
+            <form action="#">
+              <h1>Sign up</h1>
+              <input type="text" placeholder="Full Name">
+              <input type="email" placeholder="Email">
+              <input type="password" placeholder="password">
+              <button>Sign Up</button>
+            </form>
+          </div>
+        </div>
+
+        <div class="overlay-container">
+          <div class="overlay">
+            <div class="overlay-left">
+              <h1>Create Account</h1>
+              <p>or</p>
+              <button id="signInButton">Log In</button>
+            </div>
+            <div class="overlay-right">
+              <h1>Please, Log In</h1>
+              <p>or</p>
+              <button id="signUpButton">Create Account</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+</body>
+<script src="../js/registrationFormScript.js"></script>
+</html>

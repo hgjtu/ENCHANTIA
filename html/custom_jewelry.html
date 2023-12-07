@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Какой-то сайт</title>
+    <link rel="icon" type="image/png" href="../Icons/favicon.png"> <!--Иконка-->
+    <link rel="stylesheet" href="../css/general.css">
+    <link rel="stylesheet" href="../css/custom_jewelry_style.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@300&family=Jura:wght@300&display=swap" rel="stylesheet">
+</head>
+<body style="background-color: #c0c0c0;">
+    <header class="logo">
+        <div class="back_button" onclick="open_home_window()"><img src="">На главную страницу</div>
+        <img src="../logo.png" alt="Логотип" class="logo_img">
+        <div>
+            <div class="liked">
+                <img src="../Icons/heart.png" onclick="open_liked_window()">
+            </div>
+            <div class="cart">
+                <img src="../Icons/shopping_cart.png" onclick="open_cart_window()">
+            </div>
+            <div class="account">
+                <img src="../Icons/account.png"  onclick="open_registration_window()">
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <h1>Конструктор</h1>
+        <p id="text_about_constructor">Здесь вы можете выбрать основные параметры желаемого украшения и отправить заявку, после чего с вами свяжуться наши специалисты для уточнения подробностей и согласования проекта</p>
+        <div class="constructor">
+            <div class="some_selection">
+                <p class="selection_title">Тип украшения</p>
+                <span class="type_selection_item type_selection_item-active">Кольцо</span>
+                <span class="type_selection_item">Браслет</span>
+                <span class="type_selection_item">Подвеска</span>
+                <span class="type_selection_item">Серьги</span>
+            </div>
+            <div class="information_box">
+                <p>Кольца были известны еще в Древнем Египте, их надевали не только женщины, но и мужчины. Они использовались как символ богатства и социального статуса.</p>
+                <img src="../Images/new1.jpg">
+            </div>
+            <div class="some_selection">
+                <p class="selection_title">Материал украшения</p>
+                <span class="material_selection_item material_selection_item-active">Золото</span>
+                <span class="material_selection_item">Серебро</span>
+                <span class="material_selection_item">Белое золото</span>
+                <span class="material_selection_item">Платина</span>
+
+            </div>
+            <div class="information_box">
+                <p> Золото было первым металлом, который был использован в качестве денежной единицы, еще в 560 году до нашей эры.</p>
+                <img src="../Images/gold.jpg">
+            </div>
+            <div class="some_selection">
+                <p class="selection_title">Вставка</p>
+                <span class="insert_selection_item insert_selection_item-active">Без вставки</span>
+                <span class="insert_selection_item">Фианит</span>
+                <span class="insert_selection_item">Гранат</span>
+                <span class="insert_selection_item">Изумруд</span>
+                <span class="insert_selection_item">Бриллиант</span>
+                <span class="insert_selection_item">Аметист</span>
+                <span class="insert_selection_item">Сапфир</span>
+                <span class="insert_selection_item">Жемчуг</span>
+                <span class="insert_selection_item">Другое</span>
+            </div>
+            <div class="information_box">
+                <p>Некоторые из самых изысканных украшений без камней были созданы в Древнем Египте, где золото и серебро использовались для изготовления украшений с уникальными узорами и орнаментами. Эти украшения были невероятно тонкими и изящными, и мастера того времени отличались невероятным мастерством в создании украшений без использования драгоценных камней.</p>
+                <img src="../Images/pop6.png">
+            </div>
+        </div>
+
+        <form class="additionally">
+            <div>
+                <p>Дополнительные пожелания</p>
+                <textarea id="wishes" placeholder="Ваши пожелания здесь"></textarea>
+            </div>
+            <div style="height: 100%; display: grid; grid-template-rows: auto auto; align-items: end;">
+                <div></div>
+                <button id="send_application_button" type="submit" onclick="send_wishes()">Отправить заявку</button>
+            </div>
+            
+        </form>
+    </main>
+
+    <footer>
+        <div>
+            <p class="footer_title">Навигация по магазину</p>
+            <ul class="footer_links">
+                <li><a href="index.html#collections">Коллекции</a></li>
+                <li><a href="index.html#about">О нас</a></li>
+                <li><a href="index.html#articles">Статьи</a></li>
+            </ul>
+        </div>
+
+        <div>
+            <p class="footer_title">Связаться с нами</p>
+            <div class="footer_contact footer_links">
+                <img src="../Icons/location.png" class="footer_icon">
+                <p><a href="https://yandex.ru/maps/-/CDaW543Q">Moscow, Vernadskogo Prospekt, 78</a></p>
+                <img src="../Icons/phone.png" class="footer_icon">
+                <p><a href="tel:+7 123 123 12 12">+7 123 123 12 12</a><br><a href="tel:+7 321 321 32 32">+7 321 321 32 32</a></p>
+                <img src="../Icons/email.png" class="footer_icon">
+                <p><a href="mailto:qwerty@mirea.ru">qwerty@mirea.ru</a></p>
+            </div>
+        </div> 
+
+        <div>      
+            <div class="footer_logo_img_container"><img src="../logo.png" alt="Логотип" class="footer_logo_img"></div>
+            <address>
+                <button class="address_btn"><img src="../Icons/youtube.png" class="address_icons"></button>
+                <button class="address_btn"><img src="../Icons/telegram.png" class="address_icons"></button>
+                <button class="address_btn"><img src="../Icons/instagram.png" class="address_icons"></button>     
+            </address>
+        </div>
+    </footer>
+</body>
+<script src="../js/custom_jewelry_script.js"></script>
+</html>
